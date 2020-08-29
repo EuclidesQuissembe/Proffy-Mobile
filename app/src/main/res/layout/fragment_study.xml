@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_study">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_estudar" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alpha="14"
+            android:fontFamily="@font/archivo_narrow"
+            android:text="01."
+            android:textColor="@color/colorBase"
+            android:textSize="16pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/desc_study_fragment"
+            android:textColor="@color/colorBase"
+            android:textSize="12pt" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_pages" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_voltar" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

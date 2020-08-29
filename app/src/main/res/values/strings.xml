@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Proffy</string>
+    <string name="desc_study_fragment">Encontre vários professores para ensinar você</string>
+    <string name="desc_teach_fragment">Ou dê aulas sobre o que você mais conhece</string>
+    <string name="welcome">Seja bem-vindo.</string>
+    <string name="what_you_want">O que deseja fazer?</string>
+    <string name="price">preço/hora</string>
+    <string name="entrar_em_contacto">Entrar em contacto</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_proffy">Proffys</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="price_number">KZ %1$s</string>
+    <string name="ok">Tudo bem</string>
+    <string name="filter">Filtrar por dia, hora e matéria</string>
+</resources>

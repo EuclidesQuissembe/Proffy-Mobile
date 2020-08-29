@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="TeachTheme" parent="AppTheme">
+        <item name="statusBarBackground">@color/colorGreen</item>
+        <item name="statusBarForeground">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+    </style>
+
+</resources>

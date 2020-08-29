@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_act_teach"
+    android:padding="30dp"
+    tools:context=".ui.TeachActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_ok"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_narrow"
+            android:text="Quer ser um proffy?"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:text="Para começar, você precisa se cadastrar como professor na nossa plataforma web."
+            android:textColor="#D4C2FF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorGreen"
+        android:paddingVertical="15dp"
+        android:text="@string/ok"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:textSize="20sp" />
+
+</RelativeLayout>

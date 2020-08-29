@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="60dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Proffys\nDisponíveis"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/showFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_stroke_filtro"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_filtro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/filter"
+                android:textColor="#D4C2FF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_keyboard_arrow_down_24"
+            app:tint="#A380F6" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingVertical="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Matéria"
+            android:textColor="#D4C2FF"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/matterLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1">
+
+            <AutoCompleteTextView
+                android:id="@+id/matter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:labelFor="@id/matterLayout" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/matterLayout"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:text="Dia da semana"
+            android:textColor="#D4C2FF"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/weekLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@id/time">
+
+            <AutoCompleteTextView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:labelFor="@id/matterLayout" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/matterLayout"
+            android:layout_alignStart="@id/time"
+            android:layout_marginTop="20dp"
+            android:text="Horário"
+            android:textColor="#D4C2FF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/weekLayout"
+            android:layout_alignBottom="@id/weekLayout"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_timer"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:text="--:--"
+            android:textColor="#D4C2FF"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
